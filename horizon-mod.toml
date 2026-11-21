@@ -30,3 +30,9 @@ capabilities = []
 game = "26.3"
 horizon = "f00125f61f794aaa3d4e950d301f353b35b6ee3d"
 mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
+
+[[native.module]]
+id = "runtime"
+file = "crates/horizon-client/src/game.rs"
+name = "better_mount_hud"
+source = "src/lib.rs"
