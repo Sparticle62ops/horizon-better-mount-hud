@@ -1,8 +1,13 @@
 [package]
-name = "horizon-mod-better-mount-hud"
-version = "0.1.0"
+name = "horizon-mod-better_mount_hud"
+version = "1.0.0"
 edition = "2021"
-license = "GPL-3.0"
+license = "GPL-3.0-or-later"
+publish = false
+description = "Better Mount HUD ported to Horizon (1:1 core: the Hud mixin handlers for mount-health placement, always-render food, air-bubble placement and the experience/hotbar switch). Upstream: github.com/Lortseam/better-mount-hud, GPL-3.0 (c) Lortseam and contributors."
 
 [lib]
 path = "src/lib.rs"
+
+[dependencies]
+horizon-mod-api = { path = ".horizon/sdk/api/crates/horizon-mod-api" }

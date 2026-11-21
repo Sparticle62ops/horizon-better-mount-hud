@@ -1,0 +1,8 @@
+# Docker builds (the relay, the mod registry) need the Rust sources only.
+target/
+**/target/
+.local/
+**/node_modules/
+benchmarks/
+packs/
+mods/

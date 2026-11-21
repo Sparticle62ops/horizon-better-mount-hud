@@ -1,0 +1,31 @@
+id = "better_mount_hud"
+name = "Better Mount HUD"
+version = "1.0.0"
+description = """A Rust port of [Better Mount HUD](https://github.com/Lortseam/better-mount-hud)
+(Lortseam, GPL-3.0): the in-game HUD while riding a mount, carried 1:1.
+
+The 1:1 core is upstream `mixin/HudMixin.java`, its five handlers against the
+shadowed `Hud` state and the player/game-mode surface they read. Upstream has
+no config and no client entrypoints, so the registration is empty.
+
+The handlers are HUD injections into vanilla's `Hud` extraction pipeline and
+wait on a HUD-injection surface in the mod API (tracked on
+horizon-rust/horizon).
+
+Pinned to Horizon f00125f61f794aaa3d4e950d301f353b35b6ee3d and
+horizon-mixins e59da9094f0c2fdda6c627fe9eff22dec6a906f0; exact 1:1 Rust port
+tested against those revisions.
+
+Licence: GPL-3.0-or-later. Upstream (c) Lortseam and contributors.
+Source: https://github.com/Sparticle62ops/horizon-better-mount-hud
+"""
+authors = ["Lortseam", "sparticle"]
+license = "GPL-3.0-or-later"
+homepage = "https://github.com/Sparticle62ops/horizon-better-mount-hud"
+api = "0.2"
+side = "client"
+
+[native]
+game = "26.3"
+horizon = "f00125f61f794aaa3d4e950d301f353b35b6ee3d"
+mixins = "e59da9094f0c2fdda6c627fe9eff22dec6a906f0"
