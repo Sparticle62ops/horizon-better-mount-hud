@@ -24,6 +24,7 @@ license = "GPL-3.0-or-later"
 homepage = "https://github.com/Sparticle62ops/horizon-better-mount-hud"
 api = "0.2"
 side = "client"
+capabilities = []
 
 [native]
 game = "26.3"
